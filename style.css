@@ -7,6 +7,7 @@
 
 :root {
     --blue: #1e90ff;
+    --light-blue: rgba(30, 143, 255, 0.15);
     --Dblue: rgb(30, 96, 62);
     --ddd: #32C8AA;
     --bbl: #3270c872;
@@ -20,7 +21,8 @@ body{
     font-family: 'Noto Sans Display', sans-serif;
 }
 p{
-    color: white;
+    font-family: 'DM Sans', sans-serif;
+
 }
 
 *{
@@ -198,7 +200,7 @@ header{
 
 /* section1 styling */
 .section_1{
-    padding: 150px 20px;
+    padding: 120px 20px;
     background: rgb(1,36,20);
     background: radial-gradient(circle, rgba(1,36,20,0.8639308855291576) 0%, rgba(1,1,18,1) 64%, rgba(0,0,3,1) 72%, rgba(0,0,6,1) 81%);}
 
@@ -259,6 +261,94 @@ header{
 }
 
 
+/* reviews styling */
+.section_2{
+    background: var(--light-blue);
+    padding: 50px 20px;
+}
+
+.hedins h2{
+    font-size: 28px;
+    color: rgb(34, 33, 33);
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    
+}
+.reviews{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.static__reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 200px;
+    align-items: center;
+    z-index: 2;
+    margin-right: 30px;
+}
+.static__reviews h3{ 
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(34, 33, 33);
+}
+
+.rank{
+    display: flex;
+    gap: 2px;
+}
+.rank > i{
+    background: green;
+    color: rgba(247, 241, 241, 0.876);
+    padding: 2px;
+}
+.static__reviews p{ 
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: rgb(34, 33, 33);
+}
+.noun{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.noun i{
+    color: rgb(4, 254, 12)
+}
+
+.auto__reviews{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sRank{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.verifiled{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 6px;
+}
+
+.sRank p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.details p{
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+
+
 
 
 /* mobibe screen */
@@ -269,6 +359,10 @@ header{
 
     .sub__logo{
         display: flex;
+    }
+
+    .rounded{
+   display: none;
     }
 
     .nav{
@@ -320,6 +414,8 @@ header{
         font-size: 13px;
         padding: 8px 12px;
     }
+
+
 }
 
 
